@@ -17,7 +17,7 @@ env:
 jobs:
   ci_cargo_deny_ubuntu:
     name: ci_cargo_deny_ubuntu
-    runs-on: ${{ github.repository_owner == 'nervosnetwork' && 'blacksmith-16vcpu-ubuntu-2204' || 'blacksmith-16vcpu-ubuntu-2204' }}
+    runs-on: ${{ github.repository_owner == 'nervosnetwork' && 'ubuntu-22.04-16core' || 'ubuntu-22.04-16core' }}
     steps:
       - name: Free up disk space
         if: github.repository_owner != 'nervosnetwork'
