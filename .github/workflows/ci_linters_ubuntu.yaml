@@ -17,7 +17,7 @@ env:
 jobs:
   ci_linters_ubuntu:
     name: ci_linters_ubuntu
-    runs-on: ${{ github.repository_owner == 'nervosnetwork' && 'ubuntu-22.04-16core' || 'ubuntu-22.04-16core' }}
+    runs-on: ${{ github.repository_owner == 'nervosnetwork' && 'gh-16vcpu-ubuntu-2204' || 'gh-16vcpu-ubuntu-2204' }}
     steps:
       - name: Free up disk space
         if: github.repository_owner != 'nervosnetwork'
